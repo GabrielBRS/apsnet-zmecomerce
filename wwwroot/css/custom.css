@@ -1,0 +1,78 @@
+﻿body{
+}
+.bg-purple {
+    background-color: purple;
+    opacity: 1;
+}
+
+.field-validation-error {
+    color: red;
+    display: block;
+}
+
+.Imagens {
+    width: 100% !important;
+}
+
+    .container-img-thumbnail {
+        width: 100%;
+        height: 100%;
+        max-height: 180px;
+        border: 1px solid #CCC;
+        border-radius: 4px 4px 0px 0px;
+       
+        white-space: nowrap;
+        text-align: center;
+        margin: 1em 0;
+        margin-bottom: 0px;
+    }
+
+    .col-md-2 {
+        margin-bottom: 30px;
+    }
+
+    .btn-imagem-excluir {
+        width: 100% !important;
+        /*margin-bottom: 30px;*/
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        /*display: none;*/
+    }
+
+    .btn-ocultar {
+        display: none;
+    }
+
+    .Imagens thumb{
+        width: 64px;
+    }
+
+
+.Imagens div {
+    text-align: center;
+}
+
+    .Imagens img-thumbnail {
+        width: 100%;
+        border: none;
+    }
+
+    .helper{
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+    .input-file {
+        display: none;
+    }
+
+    .img-upload {
+        cursor: pointer !important;
+        vertical-align: middle;
+    }
+
+
+    .Imagens input[name=imagem] {
+        display: none;
+    }

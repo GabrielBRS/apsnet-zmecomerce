@@ -1,0 +1,22 @@
+﻿@model ecommerce_aspnetmvc_entityframework.Models.Product
+
+@{
+    Layout = "_LayoutProduct";
+}
+
+@{
+    ViewData["Title"] = "Product Page";
+}
+
+<h3>
+    Produto -> Visualizar
+</h3>
+
+<h2>Product</h2>
+<b>Código:</b>@Model.Id
+<b>Nome:</b>@Model.Nome
+<b>Descrição:</b> @Model.Descricao
+<b>Valor:</b> @Model.Valor
+
+
+@DateTime.Now

@@ -1,0 +1,121 @@
+﻿@{
+    ViewData["Title"] = "Carrinho de Compras";
+}
+<div class="container mt-5">
+    <div class="row">
+        <aside class="col-lg-9">
+            <div class="card">
+
+                <div class="table-responsive">
+
+                    <table class="table table-borderless table-shopping-cart">
+                        <thead class="text-muted">
+                            <tr class="small text-uppercase">
+                                <th scope="col">Produto</th>
+                                <th scope="col" width="120">Quantidade</th>
+                                <th scope="col" width="120">Preço</th>
+                                <th scope="col" class="text-right d-none d-md-block" width="200"> </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <figure class="itemside align-items-center">
+                                        <div class="aside"><img src="bootstrap-ecommerce-html/images/items/1.jpg" class="img-sm"></div>
+                                        <figcaption class="info">
+                                            <a href="#" class="title text-dark">Camera Canon EOS M50 Kit</a>
+                                            <p class="text-muted small">Matrix: 25 Mpx <br> Brand: Canon</p>
+                                        </figcaption>
+                                    </figure>
+                                </td>
+                                <td>
+                                    <select class="form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <div class="price-wrap">
+                                        <var class="price">R$1156.00</var>
+                                        <small class="text-muted"> R$315.20 cada </small>
+                                    </div>
+                                </td>
+                                <td class="text-right d-none d-md-block">
+                                    <a href="" class="btn btn-light">Remover</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="card-body border-top">
+                    <p class="icontext"><i class="icon text-success fa fa-truck"></i> Frete grátis nas compras acima de R$200,00!</p>
+                </div>
+
+            </div>
+
+        </aside>
+        <aside class="col-lg-3">
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <form id="frmCalculaFrete">
+                        <div class="form-group">
+                            <label>Calcular frete</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="CEP" placeholder="Digite o seu CEP">
+                                <span class="input-group-append">
+                                    <button class="btn btn-primary">Calcular</button>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                    @* TODO - Fazer aparecer aqui os valores dos fretes.. *@
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <form id="frmCupomDeDesconto">
+                        <div class="form-group">
+                            <label>Você tem um cupom?</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="" placeholder="Código do Cupom">
+                                <span class="input-group-append">
+                                    <button class="btn btn-primary">Aplicar</button>
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <dl class="dlist-align">
+                        <dt>Total price:</dt>
+                        <dd class="text-right">$69.97</dd>
+                    </dl>
+                    <dl class="dlist-align">
+                        <dt>Discount:</dt>
+                        <dd class="text-right text-danger">- $10.00</dd>
+                    </dl>
+                    <dl class="dlist-align">
+                        <dt>Total:</dt>
+                        <dd class="text-right text-dark b"><strong>$59.97</strong></dd>
+                    </dl>
+                    <hr>
+                    <p class="text-center mb-3">
+                        <img src="~/resources/img/pagarme.png" width="100%" />
+                    </p>
+                    <a href="#" class="btn btn-primary btn-block"> Finalizar a compra </a>
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-light btn-block">Continuar comprando</a>
+                </div>
+            </div>
+
+        </aside>
+    </div>
+</div>
